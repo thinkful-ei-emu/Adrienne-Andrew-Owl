@@ -46,13 +46,11 @@ function ChatItem(props) {
       <img className='chatAvatar' src={participant.avatar} alt='avatar here'></img>
       <p className='participant'>
         {participant.name}&nbsp;
-        {time && 
-        <span className='time'>{time.toLocaleTimeString()}</span>
-        }
+        {time && <span className='time'>{time.toLocaleTimeString()}</span>}
       </p>
       <p className={chatEvent.type === 'message' ? 'chatMessage': 'chatReaction'}>{message(chatEvent.type)}</p>
     </div>
-   </>
+  </>
 }
 
 export default ChatItem;
