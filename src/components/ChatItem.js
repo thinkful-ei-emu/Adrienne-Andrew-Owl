@@ -19,4 +19,4 @@ function ChatItem(props) {
 //   }
 // }
 
-return ChatItem;
+export default ChatItem;

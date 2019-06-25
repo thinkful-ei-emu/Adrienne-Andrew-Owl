@@ -1,9 +1,12 @@
 import React from 'react';
 import Participant from './Participant';
+import '../styles/ParticipantList.css';
 
 function ParticipantList(props) {
-  const participants = props.participants.map(participant => {
+  const online = props.participants.filter(participant => participant.inSession);
+  const participants = online.map(participant => {
     return <Participant
+      key={participant.id}
       name={participant.name}
       avatar={participant.avatar}
       inSession={participant.inSession}
@@ -12,7 +15,7 @@ function ParticipantList(props) {
   });
 
     return (
-    <div>
+    <div class='participantList'>
       {participants}
     </div>
   )
