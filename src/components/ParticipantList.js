@@ -15,7 +15,7 @@ function ParticipantList(props) {
   });
 
     return (
-    <div class='participantList'>
+    <div className='participantList'>
       {participants}
     </div>
   )

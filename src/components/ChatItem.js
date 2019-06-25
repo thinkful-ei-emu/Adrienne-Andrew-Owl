@@ -4,8 +4,14 @@ function ChatItem(props) {
   const participant = props.participant;
   const chatEvent = props.chatEvent;
 
-  const time = new Date(chatEvent.timestamp);
-
+  if (!participant || !chatEvent) {
+    return (
+      <div></div>
+    )
+  }
+  const time = chatEvent.timestamp && new Date(chatEvent.timestamp);
+  const startTime = chatEvent.time && new Date(chatEvent.time);
+  
   // check chatEvent type and display accordingly
   const message = (type) => {
     const name = participant.name
@@ -26,23 +32,26 @@ function ChatItem(props) {
         return `${name} left`;
       case 'join-stage':
         return `${name} joined the stage`;
-      case 'left-stage':
+      case 'leave-stage':
         return `${name} left the stage`;
       default:
         return '';
     }
   };
 
-  return (
-    <div class='chatItem'>
-      <img class='chatAvatar' src={participant.avatar} alt='avatar here'></img>
-      <p class='participant'>
+  return <>
+    {startTime && <p>{startTime.toLocaleTimeString()}</p>}
+    <div classNameName='chatItem'>
+      <img className='chatAvatar' src={participant.avatar} alt='avatar here'></img>
+      <p className='participant'>
         {participant.name}&nbsp;
-        <span class='time'>{time.toLocaleTimeString()}</span>
+        {time && 
+        <span className='time'>{time.toLocaleTimeString()}</span>
+        }
       </p>
-      <p class={chatEvent.type === 'message' ? 'chatMessage': 'chatReaction'}>{message(chatEvent.type)}</p>
+      <p className={chatEvent.type === 'message' ? 'chatMessage': 'chatReaction'}>{message(chatEvent.type)}</p>
     </div>
-  )
+   </>
 }
 
 export default ChatItem;

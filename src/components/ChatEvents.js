@@ -3,7 +3,7 @@ import ChatItem from './ChatItem';
 
 function ChatEvents(props) {
   
-  const startTime = new Date(props.time);
+  
   const chatItems = props.chatEvents.map(chatEvent => {
     // let lastParticipant = chatEvent.participantId;
     let participant = props.participants.find(participant => chatEvent.participantId === participant.id);
@@ -12,14 +12,14 @@ function ChatEvents(props) {
       <ChatItem
         key={chatEvent.timestamp}
         chatEvent={chatEvent}
-        participant={participant}
+        participant={participant} 
       />
     )
   });
 
   return (
-    <div class='chatEvents'>
-      <p>{startTime.toLocaleTimeString()}</p>
+    <div className='chatEvents'>
+      
       {chatItems}
     </div>
   )

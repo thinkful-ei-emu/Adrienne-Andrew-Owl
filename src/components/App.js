@@ -15,7 +15,6 @@ function App(props) {
       />
       <hr />
       <ChatEvents
-        time={props.chatEvents[0].time}
         participants={props.participants}
         chatEvents={props.chatEvents}
       />

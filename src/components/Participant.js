@@ -12,11 +12,11 @@ function Participant(props) {
   )
 }
 
-// class Participant extends React.Component {
+// className Participant extends React.Component {
 //   render() {
 //     const props = this.props;
 //     return (
-//       <div className='participant'>
+//       <div classNameName='participant'>
 //         <img src={props.avatar} alt='Avatar Here but no Avatar, sucks'></img>
 //         <p>{props.name}</p>
 //         <p>{props.inSession ? 'In session' : 'Offline'}</p>
