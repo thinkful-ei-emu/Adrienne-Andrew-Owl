@@ -1,11 +1,22 @@
 import React from 'react';
 
-class ChatItem extends React.Component {
-  render () {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+function ChatItem(props) {
+  return (
+    <div>
+      
+    </div>
+  )
 }
+
+// class ChatItem extends React.Component {
+//   render () {
+//     const props = this.props;
+//     return (
+//       <div>
+        
+//       </div>
+//     )
+//   }
+// }
+
+return ChatItem;
