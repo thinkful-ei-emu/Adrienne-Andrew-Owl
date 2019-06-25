@@ -3,6 +3,11 @@ import ChatItem from './ChatItem';
 
 function ChatEvents(props) {
   
+  if (!props.chatEvents || props.participants) {
+    return (
+      <div></div>
+    )
+  }
   
   const chatItems = props.chatEvents.map(chatEvent => {
     // let lastParticipant = chatEvent.participantId;

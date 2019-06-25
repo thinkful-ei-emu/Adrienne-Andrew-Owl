@@ -1,8 +1,16 @@
 import React from 'react';
 import Participant from './Participant';
 import '../styles/ParticipantList.css';
+import { isProperty } from '@babel/types';
 
 function ParticipantList(props) {
+
+  if (!props.participants) {
+    return (
+      <div></div>
+    )
+  }
+
   const online = props.participants.filter(participant => participant.inSession);
   const participants = online.map(participant => {
     return <Participant

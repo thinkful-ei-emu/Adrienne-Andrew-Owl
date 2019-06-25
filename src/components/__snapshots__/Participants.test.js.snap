@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders this UI as expected 1`] = `
+<div
+  className="participant"
+>
+  <img
+    alt="Avatar Here but no Avatar, sucks"
+    src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+  />
+  <p>
+    Koren Templeton
+  </p>
+  <p>
+    
+  </p>
+  <p>
+    On Stage
+  </p>
+</div>
+`;

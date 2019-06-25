@@ -2,6 +2,13 @@ import React from 'react';
 import Participant from './Participant';
 
 export default function Stage(props) {
+
+  if (!props.participants) {
+    return (
+      <div></div>
+    )
+  }
+
   const staged = props.participants.filter(participant => participant.onStage);
   const participants = staged.map(participant => {
     return <Participant
@@ -14,7 +21,7 @@ export default function Stage(props) {
   });
   
   return (
-    <div class="stage">
+    <div className="stage">
       {participants}
     </div>
   )

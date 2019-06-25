@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders this UI as expected 1`] = `
+<div
+  className="participantList"
+>
+  <div
+    className="participant"
+  >
+    <img
+      alt="Avatar Here but no Avatar, sucks"
+      src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+    />
+    <p>
+      Koren Templeton
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      On Stage
+    </p>
+  </div>
+  <div
+    className="participant"
+  >
+    <img
+      alt="Avatar Here but no Avatar, sucks"
+      src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+    />
+    <p>
+      Caty Flucker
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      In Session
+    </p>
+  </div>
+  <div
+    className="participant"
+  >
+    <img
+      alt="Avatar Here but no Avatar, sucks"
+      src="https://robohash.org/etexercitationemassumenda.jpg?size=200x200&set=set1"
+    />
+    <p>
+      Frank Runciman
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      In Session
+    </p>
+  </div>
+  <div
+    className="participant"
+  >
+    <img
+      alt="Avatar Here but no Avatar, sucks"
+      src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+    />
+    <p>
+      Ashla Attwool
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      On Stage
+    </p>
+  </div>
+</div>
+`;

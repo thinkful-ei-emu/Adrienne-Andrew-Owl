@@ -3,7 +3,7 @@
 exports[`renders this UI as expected 1`] = `
 Array [
   <p>
-    6:50:46 AM
+    4:50:46 AM
   </p>,
   <div
     classNameName="chatItem"
@@ -21,7 +21,7 @@ Array [
       <span
         className="time"
       >
-        6:48:04 AM
+        4:48:04 AM
       </span>
     </p>
     <p

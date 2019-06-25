@@ -9,6 +9,7 @@ function ChatItem(props) {
       <div></div>
     )
   }
+  
   const time = chatEvent.timestamp && new Date(chatEvent.timestamp);
   const startTime = chatEvent.time && new Date(chatEvent.time);
   
