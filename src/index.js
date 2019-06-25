@@ -5,10 +5,11 @@ import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
 import participants from './data/participantData';
-// import chatEvents from './data/chatEventsData';
+import chatEvents from './data/chatEventsData';
 
 ReactDOM.render(<App
-  participants={participants}
+    participants={participants}
+    chatEvents={chatEvents}
   />,
   document.getElementById('root'));
 

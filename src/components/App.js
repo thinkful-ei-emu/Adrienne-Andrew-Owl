@@ -1,8 +1,10 @@
 import React from 'react';
+
 import '../styles/App.css';
-import ParticipantList from './ParticipantList';
-import ChatLog from './ChatLog';
 import '../styles/ParticipantList.css';
+
+import ParticipantList from './ParticipantList';
+import ChatEvents from './ChatEvents';
 import Stage from './Stage';
 
 function App(props) {
@@ -10,10 +12,17 @@ function App(props) {
     <div className="App">
       <ParticipantList
         participants={props.participants}
-        />
-        <hr></hr>
-        <Stage 
-        participants={props.participants}/>
+      />
+      <hr />
+      <ChatEvents
+        time={props.chatEvents[0].time}
+        participants={props.participants}
+        chatEvents={props.chatEvents}
+      />
+      <hr />
+      <Stage 
+        participants={props.participants}
+      />
     </div>
   );
 }

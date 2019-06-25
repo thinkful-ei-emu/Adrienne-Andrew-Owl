@@ -12,6 +12,7 @@ export default function Stage(props) {
       onStage={participant.onStage}
       />
   });
+  
   return (
     <div class="stage">
       {participants}
